@@ -9,3 +9,4 @@ run("Properties...", "voxel_depth=2");
 rename(substring(imageTitle,0,12)+"composite")
 //g=imageTitle+"composite";
 //rename(g);
+run("Median 3D...", "x=1 y=1 z=1");
