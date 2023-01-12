@@ -1,0 +1,11 @@
+imageTitle=getTitle();
+run("Deinterleave", "how=2 keep");
+selectWindow(imageTitle+" #2");
+redch=getTitle;
+selectWindow(imageTitle+" #1");
+greench=getTitle;
+run("Merge Channels...", "c1=["+redch+"] c2=["+greench+"] create keep");
+run("Properties...", "voxel_depth=2");
+rename(substring(imageTitle,0,12)+"composite")
+//g=imageTitle+"composite";
+//rename(g);
