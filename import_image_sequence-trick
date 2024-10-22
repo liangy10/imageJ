@@ -1,0 +1,4 @@
+when import image sequence I found it not possible to use more than one conditions, then I found out a trick from here: https://forum.image.sc/t/how-to-open-sequence-of-files-using-regular-expression-in-macro/43605
+The trick is to use parensis and dots. For example, if we want to import files containing both "800nm" and "#1", we could input in the Filter (exactly): (.*800nm.*#1.*)
+Make sure to include parensis. 
+  
